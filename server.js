@@ -10,7 +10,7 @@ const pusher = new Pusher({
   appId: '584445',
   key: 'd0e28082ef6264058258',
   secret: 'f08d2cd6991b519fae70',
-  cluser: 'us2'
+  cluster: 'us2',
   encrypted: true
 });
 

@@ -78,14 +78,14 @@ export default class Auth extends EventEmitter {
     return accessToken;
   }
 
-  getProfile(cb) {
+  getProfile() {
     let accessToken = this.getAccessToken();
     this.auth0.client.userInfo(accessToken, (err,profile) => {
       if(profile) {
         this.userProfile = profile;
         localStorage.username = profile.nickname;
       }
-      cb(err, profile);
+      //cb(err, profile);
     });
   }
 
